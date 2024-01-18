@@ -1,0 +1,18 @@
+@import url("./common/fonts.css");
+
+i {
+    font-style: normal;
+    font-family: Symbols;
+}
+
+i.primary {
+    color: aqua;
+}
+
+i.secondary {
+    color: red;
+}
+
+i.tertiary {
+    color: blue;
+}
