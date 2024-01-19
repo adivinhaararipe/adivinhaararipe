@@ -1,0 +1,63 @@
+.p-1 {
+    padding: calc(8px * 1);
+}
+
+.p-2 {
+    padding: calc(8px * 2);
+}
+
+.p-3 {
+    padding: calc(8px * 4);
+}
+
+.p-4 {
+    padding: calc(8px * 6);
+}
+
+.p-5 {
+    padding: calc(8px * 8);
+}
+
+
+
+.pv-1 {
+    padding: calc(8px * 1) 0;
+}
+
+.pv-2 {
+    padding: calc(8px * 2) 0;
+}
+
+.pv-3 {
+    padding: calc(8px * 4) 0;
+}
+
+.pv-4 {
+    padding: calc(8px * 6) 0;
+}
+
+.pv-5 {
+    padding: calc(8px * 8) 0;
+}
+
+
+
+.ph-1 {
+    padding: 0 calc(8px * 1);
+}
+
+.ph-2 {
+    padding: 0 calc(8px * 2);
+}
+
+.ph-3 {
+    padding: 0 calc(8px * 4);
+}
+
+.ph-4 {
+    padding: 0 calc(8px * 6);
+}
+
+.ph-5 {
+    padding: 0 calc(8px * 8);
+}

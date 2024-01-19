@@ -1,23 +1,27 @@
 html:root {
-    --cl-primary: #fff;
+    --cl-primary: #0af;
     --cl-secondary: #aaa;
     --cl-tertiary: #aaa;
-    --cl-hover-primary: #bbb;
-    --cl-hover-secondary: #bbb;
-    --cl-hover-tertiary: #bbb;
+
     --cl-text-primary: #bbb;
     --cl-text-secondary: #bbb;
     --cl-text-tertiary: #bbb;
+
+    --cl-bg-primary: #fff;
+    --cl-bg-secondary: #fff;
+    --cl-bg-tertiary: #fff;
 }
 
 html.dark:root {
-    --cl-primary: #121212;
+    --cl-primary: #0af;
     --cl-secondary: #aaa;
     --cl-tertiary: #aaa;
-    --cl-hover-primary: #bbb;
-    --cl-hover-secondary: #bbb;
-    --cl-hover-tertiary: #bbb;
+
     --cl-text-primary: #bbb;
     --cl-text-secondary: #bbb;
     --cl-text-tertiary: #bbb;
+
+    --cl-bg-primary: #fff;
+    --cl-bg-secondary: #fff;
+    --cl-bg-tertiary: #fff;
 }

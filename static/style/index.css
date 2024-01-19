@@ -2,11 +2,63 @@
 @import url("./common/fonts.css");
 @import url("./common/icons.css");
 @import url("./common/theme.css");
+@import url("./common/padding.css");
+@import url("./common/dimensions.css");
+@import url("./common/sizing.css");
+
+nav {
+    height: var(--dim-nav-h);
+    position: fixed;
+}
 
 body {
     font-family: Inter;
 }
 
 body.primary {
+    background-color: var(--cl-bg-primary);
+}
+
+main.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.column {
+    flex-direction: column;
+}
+
+button {
+    padding: calc(8px * 1.75) calc(8px * 3);
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    border-radius: 8px;
+}
+
+button:hover {
+    filter: brightness(95%);
+}
+
+button.onlyicon {
+    padding: calc(8px * 1.25) calc(8px * 3);
+}
+
+button.primary {
     background-color: var(--cl-primary);
+    color: white;
+    font-weight: 600;
 }

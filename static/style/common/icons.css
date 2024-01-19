@@ -2,11 +2,40 @@
 
 i {
     font-style: normal;
+    font-weight: 900;
     font-family: Symbols;
 }
 
+
+i.s-1 {
+    font-size: 1.15em;
+}
+
+i.s-2 {
+    font-size: 1.35em;
+}
+
+i.s-3 {
+    font-size: 1.55em;
+}
+
+i.s-4 {
+    font-size: 2em;
+}
+
+i.box {
+    background-color: rgba(100,100,100, 0.3);
+    padding: 0 8px;
+    border-radius: 6px;
+}
+
+
 i.primary {
     color: aqua;
+}
+
+i.primary.box {
+    background-color: aliceblue;
 }
 
 i.secondary {
