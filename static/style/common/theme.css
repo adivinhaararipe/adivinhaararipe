@@ -26,7 +26,6 @@ html.dark:root {
     --cl-bg-tertiary: #fff;
 }
 
-
 .theme-button i::before {
     content: "";
 }

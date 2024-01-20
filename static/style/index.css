@@ -15,7 +15,7 @@
 
 body {
     font-family: Inter;
-    font-size: var(--dim-font-size);
+    font-size: calc(100% * var(--dim-itr));
 }
 
 body.default {
@@ -48,14 +48,12 @@ nav ul {
     gap: calc(1rem * var(--dim-itr));
 }
 
-
 nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
 }
-
 
 nav ul a {
     padding: calc(.25rem * var(--dim-itr)) calc(1rem * var(--dim-itr));
@@ -85,8 +83,8 @@ div.column {
 }
 
 button {
-    padding: calc(8px * 1.75) calc(8px * 3);
-    font-size: 1.15rem;
+    padding: calc(1rem * .75) calc(1rem * 1.5);
+    font-size: 1.15em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,4 +127,22 @@ a.container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+h1.grad-primary {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg,
+            var(--cl-text-primary),
+            var(--cl-text-secondary));
+    background-clip: text;
+}
+
+h1.s-4 {
+    font-size: 3.5em;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
