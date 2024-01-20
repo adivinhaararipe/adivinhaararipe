@@ -9,3 +9,19 @@
 .fillvh {
     min-height: 100vh;
 }
+
+.gap-1 {
+    gap: 4px;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-3 {
+    gap: 16px;
+}
+
+.gap-4 {
+    gap: 20px;
+}

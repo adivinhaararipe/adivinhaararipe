@@ -13,8 +13,18 @@
     box-shadow: none;
 }
 
+body {
+    font-family: Inter;
+    font-size: var(--dim-font-size);
+}
+
+body.default {
+    background: url("../img/bg.svg") no-repeat;
+    background-size: cover;
+}
+
 nav {
-    padding: 0 12px;
+    padding: 0 calc(1vmax * var(--dim-itr));
     width: 100%;
     height: var(--dim-nav-h);
     position: fixed;
@@ -25,14 +35,21 @@ nav {
     left: 0;
 }
 
+nav a {
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: calc(1rem * var(--dim-itr));
 }
 
-nav li {
+
+nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,17 +57,13 @@ nav li {
 }
 
 
-nav a {
-    color: white;
+nav ul a {
+    padding: calc(.25rem * var(--dim-itr)) calc(1rem * var(--dim-itr));
 }
 
-body {
-    font-family: Inter;
-}
-
-body.default {
-    background: url("../img/bg.svg") no-repeat;
-    background-size: cover;
+nav ul a:hover {
+    border-radius: calc(1rem * var(--dim-itr));
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 main.center {
@@ -101,7 +114,7 @@ span.translucid {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(30,30,30,0.4);
+    background-color: rgba(30, 30, 30, 0.4);
     backdrop-filter: blur(5px);
     border-radius: 32px;
     padding: 8px 16px;
@@ -116,5 +129,4 @@ a.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
 }

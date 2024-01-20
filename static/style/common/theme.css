@@ -25,3 +25,12 @@ html.dark:root {
     --cl-bg-secondary: #fff;
     --cl-bg-tertiary: #fff;
 }
+
+
+.theme-button i::before {
+    content: "";
+}
+
+.theme-switch:checked ~ .theme-button i::before {
+    content: "";
+}
