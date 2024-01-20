@@ -1,3 +1,10 @@
 :root {
-    --dim-nav-h: 72px; 
+    --dim-nav-h: 72px;
+    --dim-itr: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --dim-itr: 0.75; 
+    }
 }

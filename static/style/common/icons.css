@@ -1,11 +1,10 @@
-@import url("./common/fonts.css");
+@import url("./fonts.css");
 
 i {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 1000;
     font-family: Symbols;
 }
-
 
 i.s-1 {
     font-size: 1.15em;
@@ -24,11 +23,10 @@ i.s-4 {
 }
 
 i.box {
-    background-color: rgba(100,100,100, 0.3);
+    background-color: rgba(0,0,0,0.2);
     padding: 0 8px;
     border-radius: 6px;
 }
-
 
 i.primary {
     color: aqua;
