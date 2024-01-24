@@ -99,7 +99,7 @@ button:hover {
 }
 
 button.onlyicon {
-    padding: calc(8px * 1.25) calc(8px * 3);
+    padding: calc(1rem * .5);
 }
 
 button.primary {
@@ -131,6 +131,7 @@ a.container {
 
 h1 {
     margin: 1rem 0;
+    font-size: calc(1rem * var(--dim-itr));
 }
 
 h1.grad-primary {
