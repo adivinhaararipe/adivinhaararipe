@@ -5,6 +5,7 @@
 @import url("./common/padding.css");
 @import url("./common/dimensions.css");
 @import url("./common/sizing.css");
+@import url("./common/positions.css");
 
 * {
     margin: 0;
@@ -71,6 +72,11 @@ main.center {
     justify-content: center;
 }
 
+div {
+    display: flex;
+    flex-direction: column;
+}
+
 div.center {
     width: 100%;
     display: flex;
@@ -78,13 +84,19 @@ div.center {
     justify-content: center;
 }
 
+div.row {
+    display: flex;
+    flex-direction: row;
+}
+
 div.column {
     flex-direction: column;
 }
 
 button {
-    padding: calc(1rem * .75) calc(1rem * 1.5);
-    font-size: 1.15em;
+    padding: 0 calc(1rem * 1.5);
+    height: 52px;
+    font-size: 1.1em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +126,7 @@ span.translucid {
     align-items: center;
     background-color: rgba(30, 30, 30, 0.4);
     backdrop-filter: blur(5px);
-    border-radius: 32px;
+    border-radius: 12px;
     padding: 8px 16px;
     height: fit-content;
 }

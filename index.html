@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,22 @@
     <script defer src="./src/index.js"></script>
     <title>Adivinha Araripe</title>
 </head>
+
 <body class="default">
-    <header>
-        <nav>
-            <span class="translucid">
-                <a class="container center gap-2" href="#">
-                    <i class="s-4">󱂚</i>
-                    <b class="disappear-sm">Adivinha Araripe</b>
-                </a>
-            </span>
-            <span class="translucid">
-                <ul class="primary">
-                    <li>
-                        <input class="theme-switch" hidden type="checkbox" name="theme" id="theme" />
-                        <label class="theme-button" for="theme">
-                            <a><i></i> Tema</a>
-                        </label>
-                    </li>
-                    <li><a href="#"><i></i> Sobre</a></li>
-                </ul>
-            </span>
-        </nav>
-    </header>
-    <main class="center fillvh ph-2">
+    <main class="center relative fillvh ph-2">
         <div class="center column" style="max-width: 460px;">
             <h1 class="s-4 grad-primary">Adivinha Araripe</h1>
-            <button class="primary autow onlyicon"><i class="s-3">󰼛</i></button>
+            <div class="autow gap-2">
+                <div class="row autow gap-2">
+                    <button class="primary autow onlyicon"><i class="s-3">󰼛</i>Jogar</button>
+                    <button class="primary autow onlyicon"><i class="s-3">󰋽</i>Sobre</button>
+                </div>
+            </div>
         </div>
+        <span class="translucid absolute to-bottom mv-3" style="max-width: 650px;">
+            <img class="autow" src="./static/img/logo.png" alt="Logotipo Ministério da Cultura">
+        </span>
     </main>
-    <noscript>Ative o JavaScript para ver este site!</noscript>
 </body>
+
 </html>

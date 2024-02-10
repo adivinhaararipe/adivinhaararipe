@@ -1,0 +1,23 @@
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.to-bottom {
+    bottom: 0;
+}
+
+.to-top {
+    top: 0;
+}
+
+.to-left {
+    left: 0;
+}
+
+.to-right {
+    right: 0;
+}

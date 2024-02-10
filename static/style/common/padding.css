@@ -61,3 +61,69 @@
 .ph-5 {
     padding: 0 calc(8px * 8 * var(--dim-itr));
 }
+
+
+.m-1 {
+    margin: calc(8px * 1 * var(--dim-itr));
+}
+
+.m-2 {
+    margin: calc(8px * 2 * var(--dim-itr));
+}
+
+.m-3 {
+    margin: calc(8px * 4 * var(--dim-itr));
+}
+
+.m-4 {
+    margin: calc(8px * 6 * var(--dim-itr));
+}
+
+.m-5 {
+    margin: calc(8px * 8 * var(--dim-itr));
+}
+
+
+
+.mv-1 {
+    margin: calc(8px * 1 * var(--dim-itr)) 0;
+}
+
+.mv-2 {
+    margin: calc(8px * 2 * var(--dim-itr)) 0;
+}
+
+.mv-3 {
+    margin: calc(8px * 4 * var(--dim-itr)) 0;
+}
+
+.mv-4 {
+    margin: calc(8px * 6 * var(--dim-itr)) 0;
+}
+
+.mv-5 {
+    margin: calc(8px * 8 * var(--dim-itr)) 0;
+}
+
+
+
+.mh-1 {
+    margin: 0 calc(8px * 1 * var(--dim-itr));
+}
+
+.mh-2 {
+    margin: 0 calc(8px * 2 * var(--dim-itr));
+}
+
+.mh-3 {
+    margin: 0 calc(8px * 4 * var(--dim-itr));
+}
+
+.mh-4 {
+    margin: 0 calc(8px * 6 * var(--dim-itr));
+}
+
+.mh-5 {
+    margin: 0 calc(8px * 8 * var(--dim-itr));
+}
+
