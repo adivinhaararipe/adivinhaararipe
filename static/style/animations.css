@@ -1,0 +1,30 @@
+@keyframes slide-fade {
+    0% {
+        scale: 20%;
+        opacity: 0;
+    }
+    100% {
+        scale: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        scale: 100%; 
+    }
+    50% {
+        scale: 110%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+.anim-slide-fade {
+    animation: .5s ease-in-out slide-fade;
+}
+
+.anim-pulse {
+    animation: 2s ease-in-out pulse infinite;
+}
