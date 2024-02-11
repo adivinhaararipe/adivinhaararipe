@@ -21,10 +21,23 @@
     }
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .anim-slide-fade {
     animation: .5s ease-in-out slide-fade;
 }
 
 .anim-pulse {
     animation: 2s ease-in-out pulse infinite;
+}
+
+.anim-appear {
+    animation: 1s ease-in-out appear;
 }

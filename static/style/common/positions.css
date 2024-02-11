@@ -21,3 +21,15 @@
 .to-right {
     right: 0;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.j-space-around {
+    justify-content: space-around;
+}
+
+.j-space-between {
+    justify-content: space-between !important;
+}

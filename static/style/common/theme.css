@@ -3,27 +3,16 @@ html:root {
     --cl-secondary: #aaa;
     --cl-tertiary: #aaa;
 
-    --cl-text-primary: #bbb;
+    --cl-text-primary: rgb(250, 255, 255);
+
     --cl-text-secondary: #bbb;
     --cl-text-tertiary: #bbb;
 
     --cl-bg-primary: #fff;
     --cl-bg-secondary: #fff;
     --cl-bg-tertiary: #fff;
-}
 
-html.dark:root {
-    --cl-primary: #0af;
-    --cl-secondary: #aaa;
-    --cl-tertiary: #aaa;
-
-    --cl-text-primary: #bbb;
-    --cl-text-secondary: #bbb;
-    --cl-text-tertiary: #bbb;
-
-    --cl-bg-primary: #fff;
-    --cl-bg-secondary: #fff;
-    --cl-bg-tertiary: #fff;
+    --cl-shadow: rgba(50,50,50,0.5);
 }
 
 .theme-button i::before {

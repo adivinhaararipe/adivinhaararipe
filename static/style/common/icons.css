@@ -22,6 +22,14 @@ i.s-4 {
     font-size: 2em;
 }
 
+i.s-5 {
+    font-size: 3em;
+}
+
+i.thin {
+    font-weight: 200 !important;
+}
+
 i.box {
     background-color: rgba(0,0,0,0.2);
     padding: 0 8px;
