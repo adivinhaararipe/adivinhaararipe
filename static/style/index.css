@@ -82,7 +82,7 @@ div {
 
 .container {
     width: 100%;
-    padding: calc(2rem * var(--dim-itr));
+    padding: 0 calc(2rem * var(--dim-itr));
 }
 
 @media screen and (max-width: 768px) {
@@ -108,10 +108,26 @@ div {
     flex-direction: row;
 }
 
+.panel {
+    height: var(--dim-nav-h);
+    display: flex;
+    align-items: center;
+}
+
 .grid {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(20vmax, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 300px));
+}
+
+@media screen and (max-width: 425px) {
+    .wrap-md {
+        flex-direction: column;
+    }
+
+    .grid {
+        width: 100%;
+        grid-template-columns: 1fr ;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -146,6 +162,7 @@ div {
 }
 
 :is(button, a.btn) {
+    user-select: none;
     padding: 0 calc(1rem * 1.5);
     height: calc(52px * var(--dim-itr));
     font-size: calc(1.1rem * var(--dim-itr));
@@ -178,15 +195,27 @@ div {
     font-weight: 600;
 }
 
-span.translucid {
+.btn-sm {
+    padding: 0 calc(1rem * var(--dim-itr) * .75) !important;
+    height: calc(36px * var(--dim-itr)) !important;
+    font-size: 1rem !important;
+}
+
+.translucid {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(30, 30, 30, 0.4);
     backdrop-filter: blur(5px);
     border-radius: 12px;
-    padding: 8px 16px;
+    padding: 12px;
     height: fit-content;
+}
+
+.rounded {
+    border: 1px solid var(--cl-primary);
+    background-color: var(--cl-shadow-primary);
+    border-radius: 12px;
 }
 
 a {

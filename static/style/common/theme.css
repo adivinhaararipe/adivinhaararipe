@@ -1,7 +1,7 @@
 html:root {
     --cl-primary: #0af;
     --cl-secondary: #aaa;
-    --cl-tertiary: #aaa;
+    --cl-tertiary: #ffda07;
 
     --cl-text-primary: rgb(250, 255, 255);
 
@@ -12,13 +12,14 @@ html:root {
     --cl-bg-secondary: #fff;
     --cl-bg-tertiary: #fff;
 
-    --cl-shadow: rgba(50,50,50,0.5);
+    --cl-shadow: rgba(50, 50, 50, 0.5);
+    --cl-shadow-primary: rgba(0, 170, 255, 0.137);
 }
 
 .theme-button i::before {
     content: "";
 }
 
-.theme-switch:checked ~ .theme-button i::before {
+.theme-switch:checked~.theme-button i::before {
     content: "";
 }

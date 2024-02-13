@@ -37,11 +37,7 @@ i.box {
 }
 
 i.primary {
-    color: aqua;
-}
-
-i.primary.box {
-    background-color: aliceblue;
+    color: var(--cl-primary);
 }
 
 i.secondary {
@@ -49,5 +45,5 @@ i.secondary {
 }
 
 i.tertiary {
-    color: blue;
+    color: var(--cl-tertiary);
 }

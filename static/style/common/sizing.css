@@ -12,6 +12,10 @@
     min-height: 100vh;
 }
 
+.fillvh-safe {
+    min-height: calc(100vh - var(--dim-nav-h)) !important;
+}
+
 .gap-1 {
     gap: 4px;
 }
