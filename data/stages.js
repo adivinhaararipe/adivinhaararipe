@@ -1,4 +1,4 @@
-[
+const data = [
     {
         "icon": "󱦟",
         "title": "Cultura",
@@ -227,4 +227,6 @@
             "answer": "a"
         }
     }
-]
+];
+
+export default data;

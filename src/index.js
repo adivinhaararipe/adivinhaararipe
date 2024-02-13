@@ -1,4 +1,4 @@
-import stages from "../data/stages.json" assert { type: "json" };
+import stages from "../data/stages.js";
 
 
 function buildStages() {
