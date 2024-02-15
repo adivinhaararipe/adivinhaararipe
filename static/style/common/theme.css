@@ -1,7 +1,9 @@
 html:root {
     --cl-primary: #0af;
-    --cl-secondary: #94a1aa;
+    --cl-secondary: #1ba36f;
     --cl-tertiary: #ffda07;
+    --cl-quaternary: #e7e7e7;
+    --cl-five: #e9462a;
 
     --cl-text-primary: rgb(250, 255, 255);
 
@@ -14,7 +16,8 @@ html:root {
 
     --cl-shadow: rgba(50, 50, 50, 0.5);
     --cl-shadow-primary: rgba(0, 170, 255, 0.137);
-    --cl-shadow-secondary: rgba(148, 161, 170, 0.137);
+    --cl-shadow-secondary: #1ba36f1f;
+    --cl-shadow-five: rgba(233, 71, 42, 0.171);
 }
 
 .theme-button i::before {

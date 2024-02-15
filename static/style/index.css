@@ -126,7 +126,7 @@ div {
 
     .grid {
         width: 100%;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -164,7 +164,7 @@ div {
 :is(button, a.btn) {
     user-select: none;
     padding: 0 calc(1rem * 1.5 * var(--dim-itr));
-    height: calc(52px * var(--dim-itr));
+    height: calc(48px * var(--dim-itr));
     font-size: calc(1.1rem * var(--dim-itr));
     display: flex;
     align-items: center;
@@ -189,6 +189,13 @@ div {
     font-weight: 600;
 }
 
+:is(button, a.btn).primary-out {
+    background-color: var(--cl-shadow-primary);
+    border: 1px solid var(--cl-primary);
+    color: var(--cl-primary);
+    font-weight: 600;
+}
+
 :is(button, a.btn).secondary {
     background-color: var(--cl-secondary);
     color: white;
@@ -204,7 +211,7 @@ div {
 
 .btn-sm {
     padding: 0 calc(1rem * var(--dim-itr) * .75) !important;
-    height: calc(36px * var(--dim-itr)) !important;
+    height: calc(40px * var(--dim-itr)) !important;
     font-size: 1rem !important;
 }
 
@@ -266,11 +273,97 @@ h1 {
 
 h3 {
     font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.enunciate {
+    font-size: 1.5em;
+}
+
+.image {
+    width: 100%;
+    height: calc(300px * var(--dim-itr));
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--cl-shadow);
+    border-bottom-width: 2px;
+    border-right-width: 2px;
 }
 
 .mark {
     color: var(--cl-primary);
     font-size: 1.2em;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.option-input {
+    display: none;
+}
+
+.option-label {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: calc(16px * var(--dim-itr)) calc(22px * var(--dim-itr));
+    border-radius: 12px;
+    border: 1px solid var(--cl-shadow);
+    font-size: 1.1em;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+
+.option.selected>.option-label {
+    background-color: var(--cl-shadow-primary);
+}
+
+.alert-panel {
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height 200ms;
+    border: 1px solid transparent;
+}
+
+.alert-panel.active {
+    height: 50px;
+}
+
+.alert-panel.success {
+    background-color: var(--cl-shadow-secondary);
+    border: 1px solid var(--cl-secondary);
+    color: var(--cl-secondary);
+    font-weight: 600;
+}
+
+.alert-panel.error {
+    background-color: var(--cl-shadow-five);
+    border: 1px solid var(--cl-five);
+    color: var(--cl-five);
+    font-weight: 600;
 }
