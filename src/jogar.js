@@ -19,7 +19,7 @@ function makeQuiz(stage) {
 
     const image = document.createElement("img");
     if (stage.questions["1"].image) {
-        image.className = "image anim-slide-fade";
+        image.className = "image";
         image.alt = stage.questions["1"]["image_desc"]
         image.src = stage.questions["1"].image;
     }
