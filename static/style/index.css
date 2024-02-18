@@ -224,6 +224,13 @@ div {
     font-weight: 600;
 }
 
+:is(button, a.btn).six-out {
+    background-color: var(--cl-shadow-six);
+    border: 1px solid var(--cl-six);
+    color: var(--cl-six);
+    font-weight: 600;
+}
+
 .btn-sm {
     padding: 0 calc(1rem * var(--dim-itr) * .75) !important;
     height: calc(40px * var(--dim-itr)) !important;
@@ -242,8 +249,8 @@ div {
 }
 
 .rounded {
-    border: 1px solid var(--cl-primary);
-    background-color: var(--cl-shadow-primary);
+    border: 1px solid var(--cl-six);
+    background-color: var(--cl-shadow-six);
     border-radius: 12px;
 }
 
@@ -296,6 +303,10 @@ h3 {
     flex-direction: column;
     align-items: center;
     max-width: 700px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    border-radius: 12px;
 }
 
 .question:first-child {
@@ -309,6 +320,7 @@ h3 {
 
 .enunciate {
     font-size: 1.5em;
+    color: var(--cl-text-primary);
 }
 
 .progress {
@@ -361,9 +373,14 @@ h3 {
     font-size: 1.1em;
     border-bottom-width: 2px;
     border-right-width: 2px;
+    border: 1px solid #999;
+    background-color: #9993;
+    color: #999;
 }
 
 .option.selected>.option-label {
+    color: var(--cl-primary);
+    border: 1px solid var(--cl-primary);
     background-color: var(--cl-shadow-primary);
 }
 

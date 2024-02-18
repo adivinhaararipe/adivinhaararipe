@@ -4,6 +4,7 @@ html:root {
     --cl-tertiary: #ffda07;
     --cl-quaternary: #e7e7e7;
     --cl-five: #e9462a;
+    --cl-six: #ffda07;
 
     --cl-text-primary: rgb(250, 255, 255);
 
@@ -15,10 +16,11 @@ html:root {
     --cl-bg-tertiary: #fff;
 
     --cl-shadow: rgba(50, 50, 50, 0.5);
-    --cl-shadow-primary: rgba(0, 170, 255, 0.137);
-    --cl-shadow-secondary: #1ba36f1f;
+    --cl-shadow-primary: rgba(0, 170, 255, 0.178);
+    --cl-shadow-secondary: rgba(27, 163, 111, 0.199);
     --cl-shadow-tertiary: #ffda07c0;
     --cl-shadow-five: rgba(233, 71, 42, 0.171);
+    --cl-shadow-six: rgba(0, 0, 0, 0.212);
 }
 
 .theme-button i::before {

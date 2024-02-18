@@ -22,7 +22,7 @@ function makeQuiz(stageKey) {
 
   quizContainer.className = "quiz";
 
-  Object.keys(questions).forEach((key, keyIndex) => {
+  Object.keys(questions).forEach((key) => {
     if (!JSON.parse(localStorage.getItem(K_STAGES))[stageKey].includes(key)) {
       const container = document.createElement("div");
       container.className = "question";
@@ -89,10 +89,10 @@ function makeQuiz(stageKey) {
       });
 
       const panel = document.createElement("p");
-      panel.className = "alert-panel";
+      panel.className = "alert-panel mv-2";
 
       const btnContainer = document.createElement("div");
-      btnContainer.className = "row autow gap-2 mv-2";
+      btnContainer.className = "row autow gap-2";
 
       const back = document.createElement("button");
       back.type = "button";
@@ -107,7 +107,7 @@ function makeQuiz(stageKey) {
       const submit = document.createElement("button");
       submit.type = "submit";
       submit.className = "secondary autow";
-      submit.textContent = "Enviar";
+      submit.textContent = "Responder";
 
       form.addEventListener("submit", (event) => {
         event.preventDefault();
@@ -162,7 +162,7 @@ function loadStage(stageKey) {
   gameEl.classList.remove("disabled");
   stagesEl.classList.add("disabled");
 
-  gameEl.innerHTML = `<h1 class="anim-slide-fade">PREPARE-SE!</h1>`;
+  gameEl.innerHTML = `<h1 class="anim-slide-fade text-primary neon">PREPARE-SE!</h1>`;
 
   setTimeout(() => {
     gameEl.innerHTML = "";
