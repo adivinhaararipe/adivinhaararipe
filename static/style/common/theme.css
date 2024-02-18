@@ -7,8 +7,8 @@ html:root {
 
     --cl-text-primary: rgb(250, 255, 255);
 
-    --cl-text-secondary: #bbb;
-    --cl-text-tertiary: #bbb;
+    --cl-text-secondary: #333;
+    --cl-text-tertiary: #333;
 
     --cl-bg-primary: #fff;
     --cl-bg-secondary: #fff;
@@ -17,6 +17,7 @@ html:root {
     --cl-shadow: rgba(50, 50, 50, 0.5);
     --cl-shadow-primary: rgba(0, 170, 255, 0.137);
     --cl-shadow-secondary: #1ba36f1f;
+    --cl-shadow-tertiary: #ffda07c0;
     --cl-shadow-five: rgba(233, 71, 42, 0.171);
 }
 
