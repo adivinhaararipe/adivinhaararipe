@@ -4,6 +4,8 @@ import utils from "./utils.js";
 const stagesEl = document.getElementById("stages");
 const gameEl = document.getElementById("game");
 const pointsEl = document.getElementById("points");
+const finishEl = document.getElementById("finish");
+const resetEl = document.getElementById("reset");
 
 const K_STAGES = "stages";
 
@@ -191,7 +193,17 @@ function buildStages() {
       pointsCounter++;
     }
 
-    pointsEl.textContent = `${pointsCounter}/${Object.keys(JSON.parse(localStorage.getItem(K_STAGES))).length}`;
+    const quantity = Object.keys(JSON.parse(localStorage.getItem(K_STAGES))).length;
+
+    pointsEl.textContent = `${pointsCounter}/${quantity}`;
+    
+    if (pointsCounter == quantity) {
+      finishEl.classList.add("visible");
+      resetEl.addEventListener("click", () => {
+        localStorage.removeItem(K_STAGES);
+        window.location.reload();
+      });
+    }
 
     stagesEl.appendChild(card);
   });

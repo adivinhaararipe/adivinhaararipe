@@ -248,8 +248,8 @@ div {
     height: fit-content;
 }
 
-.rounded {
-    border: 1px solid var(--cl-six);
+.rounded-tertiary {
+    border: 1px solid var(--cl-tertiary);
     background-color: var(--cl-shadow-six);
     border-radius: 12px;
 }
@@ -298,13 +298,21 @@ h3 {
     font-weight: 600;
 }
 
+#finish {
+    display: none;
+}
+
+#finish.visible {
+    display: flex;
+}
+
 .question {
     display: none;
     flex-direction: column;
     align-items: center;
     max-width: 700px;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    background-color: rgba(30, 30, 30, 0.7);
     padding: 12px;
     border-radius: 12px;
 }

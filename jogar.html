@@ -15,16 +15,32 @@
             <a href="./index.html" class="btn six-out row center gap-1">
                 <i class="s-3">󰌍</i>
             </a>
-            <div class="row center gap-2 rounded gap-1 auto-ml p-1">
+            <div class="row center gap-2 rounded-tertiary gap-1 auto-ml p-1">
                 <i class="s-3 tertiary">󰔺</i>
                 <h4 id="points" class="text-primary"></h4>
             </div>
         </div>
     </header>
     <main class="container fillvh-safe fit-header center">
+        <div id="finish" class="mv-3 translucid">
+            <h2 class="text-center mv-2 text-primary">Parabéns!</h2>
+            <p class="text-center text-primary">Você finalizou o jogo com sucesso!</p>
+            <p class="text-center text-primary mb-2">Caso queira jogar de novo, clique no botão abaixo.</p>
+            <button id="reset" class="btn primary autow"><i>󰑙</i>Jogar de novo</button>
+        </div>
         <div id="stages" class="grid gap-3"></div>
         <div id="game"></div>
     </main>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

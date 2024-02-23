@@ -130,3 +130,7 @@
 .auto-ml {
     margin-left: auto;
 }
+
+.mb-2 {
+    margin-bottom: calc(8px * 2 * var(--dim-itr));
+}
