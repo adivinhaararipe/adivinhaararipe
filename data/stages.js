@@ -69,55 +69,57 @@ const data = {
   "historia": {
     "icon": "󱦟",
     "title": "História",
-    "description": "Vamos conhecer um pouco da história?",
+    "description": "Veja alguns pontos da nossa história!",
     "questions": {
       "1": {
-        "image": "static/img/stages/s1q1.png",
-        "image_desc": "Uma estátua alta com dois losangos a rodeando!",
-        "question": "Qual o nome dado ao monumento acima?",
+        "question": "Em que ano foi fundado oficialmente o município de Araripe?",
         "options": {
-          "a": "Mulher Meditando",
-          "b": "Raspadeira de Mandioca",
-          "c": "Estátua de Pitia",
-          "d": "A Fundadora do Araripe"
+          "a": "1879",
+          "b": "1825",
+          "c": "1925",
+          "d": "1875"
         },
-        "answer": "b"
+        "answer": "d"
       },
       "2": {
-        "image": "static/img/stages/s1q1.png",
-        "image_desc": "Uma estátua alta com dois losangos a rodeando!",
-        "question": "Qual o nome dado ao monumento acima?",
+        "question": "Antes de ser chamada de Araripe, a localidade foi, inicialmente, chamada de:",
         "options": {
-          "a": "Mulher Meditando",
-          "b": "Raspadeira de Mandioca",
-          "c": "Estátua de Pitia",
-          "d": "A Fundadora do Araripe"
+          "a": "Brejo Seco",
+          "b": "Planaltina",
+          "c": "Serra do Monte",
+          "d": "Freguesia do Crato"
         },
-        "answer": "b"
+        "answer": "a"
       },
       "3": {
-        "image": "static/img/stages/s1q1.png",
-        "image_desc": "Uma estátua alta com dois losangos a rodeando!",
-        "question": "Qual o nome dado ao monumento acima?",
+        "question": "Qual o nome do padre que motivou uma maior povoação da localidade de Brejo Seco?",
         "options": {
-          "a": "Mulher Meditando",
-          "b": "Raspadeira de Mandioca",
-          "c": "Estátua de Pitia",
-          "d": "A Fundadora do Araripe"
+          "a": "Antonio Hélio Lira",
+          "b": "Frei Damião",
+          "c": "Henrique José Cavalcante",
+          "d": "Frade Raimundo"
         },
-        "answer": "b"
+        "answer": "c"
       },
       "4": {
-        "image": "static/img/stages/s1q1.png",
-        "image_desc": "Uma estátua alta com dois losangos a rodeando!",
-        "question": "Qual o nome dado ao monumento acima?",
+        "question": "A igreja onde foi realizada a primeira missa do povoado de Brejo Seco localizava-se na: ",
         "options": {
-          "a": "Mulher Meditando",
-          "b": "Raspadeira de Mandioca",
-          "c": "Estátua de Pitia",
-          "d": "A Fundadora do Araripe"
+          "a": "Igreja Cruz do Monte",
+          "b": "casa de Carlinhos",
+          "c": "Rua Santo Antônio",
+          "d": "Rua Alexandre Arraes"
         },
-        "answer": "b"
+        "answer": "d"
+      },
+      "5": {
+        "question": "Atualmente, o município de araripe possui, além do distrito-sede, quatro outros distritos, que são:",
+        "options": {
+          "a": "Araripina, Pajeú, Brejinho e Jacarandá",
+          "b": "Sede, Brejinho, Riacho Grande e Alagoinha",
+          "c": "Alagoinha, Brejinho, Pajeú e Riacho Grande",
+          "d": "Pajeú, Brejinho, Riacho Grande e Lagoa Grande"
+        },
+        "answer": "c"
       },
     },
   }

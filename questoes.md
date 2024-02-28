@@ -40,7 +40,7 @@
 2. Antes de ser chamada de Araripe, a localidade foi, inicialmente, chamada de:
 [X] Brejo Seco
 
-3. Qual o nome do padree que motivou uma maior povoação da localidade de Brejo Seco?
+3. Qual o nome do padre que motivou uma maior povoação da localidade de Brejo Seco?
 [X] Henrique José Cavalcante
 
 4. Onde se localizava a igreja onde foi realizada a primeira missa do povoado de Brejo Seco?
