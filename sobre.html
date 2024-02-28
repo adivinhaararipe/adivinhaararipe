@@ -4,13 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/style/index.css">
     <title>Sobre</title>
 </head>
 
-<body>
-    <main>
-        <h1>Sobre</h1>
+<body class="default">
+    <main class="center relative fillvh ph-2">
+        <div class="center column anim-slide-fade" style="max-width: 460px;">
+            <span class="column translucid mv-3 text-primary" style="max-width: 650px; flex-grow: 0;">
+                <div class="row flex center gap-4">
+                    <a href="./index.html" class="text-primary">
+                        <i class="s-4">󰌍</i>
+                    </a>
+                    <h2>Sobre este projeto</h2>
+                </div>
+                <p class="mv-2 text-center">
+                    Com o incentivo da Lei Paulo Gustavo, este projeto público foi desenvolvido
+                    no intuito de valorizar a nossa cultura, a cultura araripense, de forma lúdica e divertida.
+                </p>
+                <h4 class="mb-2">Araripe, gleba querida!</h4>
+                <img class="autow" src="./static/img/logo.png" alt="Logotipo Ministério da Cultura">
+            </span>
+        </div>
     </main>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
