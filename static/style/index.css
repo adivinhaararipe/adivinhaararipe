@@ -346,7 +346,7 @@ h3 {
 
 .image {
     width: 100%;
-    height: calc(350px * var(--dim-itr));
+    height: calc(320px * var(--dim-itr));
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid var(--cl-shadow);
@@ -358,6 +358,12 @@ h3 {
     .image {
         height: calc(280px * var(--dim-itr));
     }
+}
+
+.credits {
+    margin-top: .25rem;
+    color: var(--cl-text-primary);
+    font-size: .75rem;
 }
 
 .mark {

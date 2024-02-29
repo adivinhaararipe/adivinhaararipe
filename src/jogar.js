@@ -38,11 +38,19 @@ function makeQuiz(stageKey) {
 
 
       const image = document.createElement("img");
-      if (question["image"] && question["image_desc"]) {
-        image.className = "image";
+
+      image.className = "image";
+      image.src = question.image || "";
+      
+
+      if (question["image_desc"]) {
         image.alt = question["image_desc"]
-        image.src = question.image;
       }
+
+      const credits = document.createElement("p");
+    
+      credits.className = "credits";
+      credits.textContent = "Créditos: " + question["credits"] || "";  
 
       const enunciate = document.createElement("h3");
       enunciate.className = "enunciate text-center mv-2"
@@ -142,8 +150,12 @@ function makeQuiz(stageKey) {
 
       container.appendChild(progress);
 
-      if (image.hasAttribute("src")) {
+      if (question["image"]) {
         container.appendChild(image);
+      }
+
+      if (question["credits"]) {
+        container.appendChild(credits);
       }
 
       container.appendChild(enunciate);
