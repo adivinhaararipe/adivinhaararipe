@@ -8,6 +8,7 @@ const finishEl = document.getElementById("finish");
 const resetEl = document.getElementById("reset");
 
 const K_STAGES = "stages";
+const K_FINISHED = "finished";
 
 if (!localStorage.getItem(K_STAGES)) {
   const obj = {};
@@ -16,6 +17,19 @@ if (!localStorage.getItem(K_STAGES)) {
 }
 
 let pointsCounter = 0;
+
+function verifyComplete(key) {
+  return JSON.parse(localStorage.getItem(K_STAGES))[key].length
+    == Object.keys(stages[key]["questions"]).length
+}
+
+function setFinished() {
+  return localStorage.setItem(K_FINISHED, String('true'))
+}
+
+function getFinished() {
+  return localStorage.getItem(K_FINISHED)
+}
 
 function makeQuiz(stageKey) {
   const stage = stages[stageKey];
@@ -41,16 +55,16 @@ function makeQuiz(stageKey) {
 
       image.className = "image";
       image.src = question.image || "";
-      
+
 
       if (question["image_desc"]) {
         image.alt = question["image_desc"]
       }
 
       const credits = document.createElement("p");
-    
+
       credits.className = "credits";
-      credits.textContent = "Créditos: " + question["credits"] || "";  
+      credits.textContent = "Créditos: " + question["credits"] || "";
 
       const enunciate = document.createElement("h3");
       enunciate.className = "enunciate text-center mv-2"
@@ -85,6 +99,7 @@ function makeQuiz(stageKey) {
         optionLabel.className = "option-label";
 
         optionInput.addEventListener("change", () => {
+          utils.playAudio('btn')
           if (lastOption != null) {
             lastOption.classList.remove("selected");
           }
@@ -110,6 +125,7 @@ function makeQuiz(stageKey) {
       back.textContent = "Voltar";
 
       back.addEventListener("click", () => {
+        utils.playAudio('btn');
         gameEl.classList.add("disabled");
         stagesEl.classList.remove("disabled");
       });
@@ -124,13 +140,16 @@ function makeQuiz(stageKey) {
         const answer = (new FormData(event.target)).get("answer");
         if (!answer) {
           utils.alert(panel, "Selecione uma alternativa!", "error");
+          utils.playAudio('error');
           return;
         }
         if (answer === question.answer) {
           utils.alert(panel, "Parabéns! Você Acertou!", "success");
+          utils.playAudio('success');
           utils.storeCorrect(stageKey, key);
         } else {
           utils.alert(panel, "Resposta errada!", "error");
+          utils.playAudio('error');
         }
 
         setTimeout(() => {
@@ -198,9 +217,10 @@ function buildStages() {
 
     card.addEventListener("click", () => {
       loadStage(key);
+      utils.playAudio('btn');
     });
 
-    if (JSON.parse(localStorage.getItem(K_STAGES))[key].length == Object.keys(stages[key]["questions"]).length) {
+    if (verifyComplete(key)) {
       card.classList.add("completed");
       pointsCounter++;
     }
@@ -208,11 +228,17 @@ function buildStages() {
     const quantity = Object.keys(JSON.parse(localStorage.getItem(K_STAGES))).length;
 
     pointsEl.textContent = `${pointsCounter}/${quantity}`;
-    
+
     if (pointsCounter == quantity) {
       finishEl.classList.add("visible");
+      if (!getFinished()) {
+        utils.playAudio('finish')
+        setFinished()
+      }
       resetEl.addEventListener("click", () => {
+        utils.playAudio('btn');
         localStorage.removeItem(K_STAGES);
+        localStorage.removeItem(K_FINISHED);
         window.location.reload();
       });
     }

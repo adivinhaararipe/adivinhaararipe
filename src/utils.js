@@ -20,11 +20,28 @@ class Utils {
         const stageStatus = JSON.parse(localStorage.getItem("stages"));
         if (!stageStatus[stage]) return;
         if (stageStatus[stage].includes(question)) return;
-        
+
         stageStatus[stage].push(question);
 
         localStorage.setItem("stages",
             JSON.stringify(stageStatus));
+    }
+
+    playAudio(variant) {
+        switch (variant) {
+            case 'success':
+                new Audio('../static/audio/success.mpeg').play();
+                break;
+            case 'error':
+                new Audio('../static/audio/error.mpeg').play();
+                break;
+            case 'btn':
+                new Audio('../static/audio/btn.mpeg').play();
+                break;
+            case 'finish':
+                new Audio('../static/audio/finish.mpeg').play();
+                break;
+        }
     }
 }
 
