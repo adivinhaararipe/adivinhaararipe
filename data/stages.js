@@ -236,7 +236,7 @@ const data = {
           "c": "Agosto",
           "d": "Setembro"
         },
-        "answer": "c"
+        "answer": "a"
       },
       "4": {
         "image": "static/img/stages/s5q4.jpg",
