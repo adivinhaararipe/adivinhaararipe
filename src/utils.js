@@ -30,16 +30,16 @@ class Utils {
     playAudio(variant) {
         switch (variant) {
             case 'success':
-                new Audio('../static/audio/success.mpeg').play();
+                new Audio('static/audio/success.mpeg').play();
                 break;
             case 'error':
-                new Audio('../static/audio/error.mpeg').play();
+                new Audio('static/audio/error.mpeg').play();
                 break;
             case 'btn':
-                new Audio('../static/audio/btn.mpeg').play();
+                new Audio('static/audio/btn.mpeg').play();
                 break;
             case 'finish':
-                new Audio('../static/audio/finish.mpeg').play();
+                new Audio('static/audio/finish.mpeg').play();
                 break;
         }
     }
